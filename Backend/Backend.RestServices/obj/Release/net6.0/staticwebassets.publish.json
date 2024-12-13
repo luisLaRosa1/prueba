@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ctURqGHegLF9xKaD76pcInCEK+BQL+Fwt5K9Ebun0YU=",
+  "Source": "Backend.RestServices",
+  "BasePath": "_content/Backend.RestServices",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
