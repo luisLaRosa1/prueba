@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Backend.Infraestructure.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a1ff93a98e440699bd7f1d19d77afaa8311cf16")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec075a3133a532953c134d9cd1776d6351a66865")]
 [assembly: System.Reflection.AssemblyProductAttribute("Backend.Infraestructure.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Backend.Infraestructure.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

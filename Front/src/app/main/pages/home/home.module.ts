@@ -8,6 +8,9 @@ import { RadioButtonModule } from 'src/core/ui/components/radio-button/radio-but
 import { RadioOptionsModule } from 'src/core/ui/components/radio-options/radio-options.module';
 import { ButtonModule } from 'src/core/ui/components/button/button.module';
 import { LoaderModule } from 'src/core/ui/components/loader/loader.module';
+import { TableModule } from 'primeng/table';
+import { DialogModule } from 'primeng/dialog';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -16,8 +19,12 @@ import { LoaderModule } from 'src/core/ui/components/loader/loader.module';
     HomeRoutingModule,
     InputModule,
     RadioButtonModule,
+    TableModule,
     RadioOptionsModule,
+    DialogModule,
     ButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
     LoaderModule,
   ],
 })

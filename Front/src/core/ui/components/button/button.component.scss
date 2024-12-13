@@ -39,7 +39,7 @@
   }
   &.btn--icon {
     display: inline-flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     .icon-spinner {
       animation-name: spin;
@@ -76,10 +76,12 @@
     border-radius: 500px;
   }
   &.btn--outline {
-    background-color: transparent;
+    color: $white;
+    background-color: $grey;
     border-color: $bhp-orange-1;
-    color: $bhp-orange-1;
-    min-width: 250px;
+    color: $white;
+    margin-top: 20px;
+    min-width: 145px;
     @media (max-width:480px) {
       min-width:100%;
     }

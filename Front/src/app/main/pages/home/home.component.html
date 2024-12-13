@@ -1,26 +1,60 @@
 <pmf-loader *ngIf="loading"></pmf-loader>
 <div class="hero">
   <div class="container">
-    <h2 class="u-text--white hero__title">Encuesta</h2>
-  </div>
-</div>
-<div class="container container--md">
-  <div class="box--border">
-    <p class="text u-mb20">¡Bienvenido a la encuesta online!.</p>
+    <h2 class="u-text--white hero__title">Prueba</h2>
   </div>
 </div>
 
-<div class="container container--md">
-  <div class="row u-mb80" *ngFor="let item of data; let i = index">
+<div class="container container--md ">
+  <div
+    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; margin-top: 2rem;">
+    <h1>Lista de Productos</h1>
+    <pmf-button style="width: auto;" primary cssClass="btn-mb u-mr10" (click)="showModal()">Nuevo Producto</pmf-button>
+  </div>
+  <form [formGroup]="form" autocomplete="off">
+    <div class="row u-mb20 table-header">
+      <div class="col-md-5">
+        <pmf-input [placeholder]="''" [label]="'Código'" formControlName="codeFilter"></pmf-input>
+      </div>
+      <div class="col-md-5">
+        <pmf-input [placeholder]="''" [label]="'Nombre'" formControlName="nameFilter"></pmf-input>
+      </div>
+      <div class="col-md-2">
+        <pmf-button style="width: auto;" outline cssClass="btn-mb u-mr10" (click)="search()">Buscar</pmf-button>
+      </div>
+    </div>
+  </form>
+  <p-table [value]="filteredData">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Precio Unitario</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-item>
+      <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.price }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+  <div class="row" *ngIf="!filteredData?.length && !loading">
     <div class="col-md-12">
-      <h5 class="txt txt__title--seccion">Pregunta {{ i + 1 }}: {{ item.questionName }}</h5>
-      <ng-container *ngIf="item.questionCode === '001' || item.questionCode === '002'">
-        <pmf-radio-options [options]="convert(item.value)"></pmf-radio-options>
-      </ng-container>
-      <ng-container *ngIf="item.questionCode === '003'">
-        <pmf-input> </pmf-input>
-      </ng-container>
+      <h4 class="txt txt-web-h5 u-center u-mt60 u-mb60">
+        {{ this.noResultMessage }}
+      </h4>
     </div>
   </div>
-  <pmf-button primary cssClass="btn-mb u-mr10"> Guardar encuesta </pmf-button>
+</div>
+
+
+<div class="container container--md">
+  <div class="row u-mb80">
+    <div class="col-md-12">
+    </div>
+  </div>
 </div>
