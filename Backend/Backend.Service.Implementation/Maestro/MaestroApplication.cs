@@ -1,8 +1,8 @@
-﻿using Backend.Domain.Entities.Util;
-using Backend.Infraestructure.UnitOfWork;
-using Backend.Application.Interface.Maestro;
-using static Backend.CrossCuting.Common.Constants;
+﻿using Backend.Application.Interface.Maestro;
 using Backend.CrossCuting.DTO.Maestro;
+using Backend.Domain.Entities.Entities.Producto;
+using Backend.Domain.Entities.Util;
+using Backend.Infraestructure.UnitOfWork;
 
 namespace Backend.Application.Implementation.Maestro
 {
@@ -15,21 +15,31 @@ namespace Backend.Application.Implementation.Maestro
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<ResponseDTO> MasterDetailInformation()
+        public async Task<ResponseDTO> Information()
         {
             var response = new ResponseDTO();
-            var master = await _unitOfWork.MaestroRepository.MasterDetailInformation(Core.Master.Comprobante);
-            var client = await _unitOfWork.ClienteRepository.ClientInformation();
-            var product = await _unitOfWork.ProductoRepository.ProductInformation();
+            var product = await _unitOfWork.ProductoRepository.Products();
 
             var dto = new MaestroDTO
             {
-                Voucher = master,
-                Client = client,
                 Product = product
             };
 
             response.Data = dto;
+
+            return response;
+        }
+
+        public async Task<ResponseDTO> Register(ProductoModel model)
+        {
+            using IUnitOfWork u = _unitOfWork;
+            var response = new ResponseDTO();
+            var product = await u.ProductoRepository.Register(model);
+
+            response.Data = product.Item1;
+            response.Message = product.Item2;
+
+            u.Commit();
 
             return response;
         }

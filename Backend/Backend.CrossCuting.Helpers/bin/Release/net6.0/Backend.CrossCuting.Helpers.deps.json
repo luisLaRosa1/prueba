@@ -1029,7 +1029,10 @@
       },
       "Backend.CrossCuting.Common/1.0.0": {
         "runtime": {
-          "Backend.CrossCuting.Common.dll": {}
+          "Backend.CrossCuting.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Backend.Domain.Entities/1.0.0": {
@@ -1038,7 +1041,10 @@
           "FluentValidation": "10.2.3"
         },
         "runtime": {
-          "Backend.Domain.Entities.dll": {}
+          "Backend.Domain.Entities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

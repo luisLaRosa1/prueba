@@ -1151,7 +1151,10 @@
       },
       "Backend.CrossCuting.Common/1.0.0": {
         "runtime": {
-          "Backend.CrossCuting.Common.dll": {}
+          "Backend.CrossCuting.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Backend.CrossCuting.DTO/1.0.0": {
@@ -1159,7 +1162,10 @@
           "Backend.Domain.Entities": "1.0.0"
         },
         "runtime": {
-          "Backend.CrossCuting.DTO.dll": {}
+          "Backend.CrossCuting.DTO.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Backend.CrossCuting.Helpers/1.0.0": {
@@ -1172,7 +1178,10 @@
           "RestSharp": "106.15.0"
         },
         "runtime": {
-          "Backend.CrossCuting.Helpers.dll": {}
+          "Backend.CrossCuting.Helpers.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Backend.Domain.Entities/1.0.0": {
@@ -1181,7 +1190,10 @@
           "FluentValidation": "10.2.3"
         },
         "runtime": {
-          "Backend.Domain.Entities.dll": {}
+          "Backend.Domain.Entities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Backend.Infraestructure.Repository/1.0.0": {
@@ -1194,7 +1206,10 @@
           "System.IdentityModel.Tokens.Jwt": "6.15.0"
         },
         "runtime": {
-          "Backend.Infraestructure.Repository.dll": {}
+          "Backend.Infraestructure.Repository.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

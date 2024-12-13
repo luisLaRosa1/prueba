@@ -25,7 +25,10 @@
       },
       "Backend.CrossCuting.Common/1.0.0": {
         "runtime": {
-          "Backend.CrossCuting.Common.dll": {}
+          "Backend.CrossCuting.Common.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

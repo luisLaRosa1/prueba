@@ -6,6 +6,7 @@ namespace Backend.Infraestructure.Repository.ProductoRepository
 {
     public interface IProductoRepository
     {
-        Task<List<ProductoModel>> ProductInformation();
+        Task<List<ProductoModel>> Products();
+        Task<(bool, string)> Register(ProductoModel register);
     }
 }

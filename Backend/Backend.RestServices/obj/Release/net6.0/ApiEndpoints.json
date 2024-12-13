@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "Backend.RestServices.Controllers.ProductController",
+    "Method": "Products",
+    "RelativePath": "api/Product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

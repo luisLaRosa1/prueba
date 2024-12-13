@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U8Q6GOHncn2NZrz1VU2NGkSx/1WIUjypIqzM7DVJYCzC7vZdQcIJYiR5VVqFjrzvGOC+tb7RgMTrFTAR912C0w==",
+  "dgSpecHash": "3IaPdjFt5Jg=",
   "success": true,
-  "projectFilePath": "C:\\Trabajos\\canvia\\Backend\\Backend.Domain.Entities\\Backend.Domain.Entities.csproj",
+  "projectFilePath": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\Backend.Domain.Entities\\Backend.Domain.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luis\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512"
   ],

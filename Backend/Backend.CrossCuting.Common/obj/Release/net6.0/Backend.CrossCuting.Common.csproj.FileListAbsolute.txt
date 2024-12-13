@@ -22,3 +22,15 @@ C:\Trabajos\canvia\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\Backend
 C:\Trabajos\canvia\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\refint\Backend.CrossCuting.Common.dll
 C:\Trabajos\canvia\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\Backend.CrossCuting.Common.pdb
 C:\Trabajos\canvia\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\ref\Backend.CrossCuting.Common.dll
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\bin\Release\net6.0\Backend.CrossCuting.Common.deps.json
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\bin\Release\net6.0\Backend.CrossCuting.Common.dll
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\bin\Release\net6.0\Backend.CrossCuting.Common.pdb
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\Backend.CrossCuting.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\Backend.CrossCuting.Common.AssemblyInfoInputs.cache
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\Backend.CrossCuting.Common.AssemblyInfo.cs
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\Backend.CrossCuting.Common.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\Backend.CrossCuting.Common.sourcelink.json
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\Backend.CrossCuting.Common.dll
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\refint\Backend.CrossCuting.Common.dll
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\Backend.CrossCuting.Common.pdb
+C:\Users\Luis\Desktop\prueba\Backend\Backend.CrossCuting.Common\obj\Release\net6.0\ref\Backend.CrossCuting.Common.dll

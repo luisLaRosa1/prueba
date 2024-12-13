@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "Backend.RestServices.Controllers.ProductController",
+    "Method": "Products",
+    "RelativePath": "api/Product",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.RestServices.Controllers.ProductController",
+    "Method": "Register",
+    "RelativePath": "api/Product",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "Backend.Domain.Entities.Entities.Producto.ProductoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

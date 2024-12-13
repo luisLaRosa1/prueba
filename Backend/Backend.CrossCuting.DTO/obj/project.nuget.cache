@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0nBfRAOztK9wQqPjcJIzPcai4WYUNcAxnS2Imu1+vgL63jjM24rXjTc7GZJZQpQYOgBjvHhrsXLZNTWEet2vcA==",
+  "dgSpecHash": "+WxpVKdCpeI=",
   "success": true,
-  "projectFilePath": "C:\\Trabajos\\canvia\\Backend\\Backend.CrossCuting.DTO\\Backend.CrossCuting.DTO.csproj",
+  "projectFilePath": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\Backend.CrossCuting.DTO\\Backend.CrossCuting.DTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luis\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512"
   ],

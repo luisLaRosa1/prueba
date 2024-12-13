@@ -1,0 +1,127 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CEE3C766-C663-4072-A2B3-FD87B061E07F}|Backend.Service.Implementation\\Backend.Application.Implementation.csproj|c:\\users\\luis\\desktop\\prueba\\backend\\backend.service.implementation\\maestro\\maestroapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEE3C766-C663-4072-A2B3-FD87B061E07F}|Backend.Service.Implementation\\Backend.Application.Implementation.csproj|solutionrelative:backend.service.implementation\\maestro\\maestroapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D459F562-BD2B-44A8-B22B-71BA1595317F}|Backend.RestServices\\Backend.RestServices.csproj|c:\\users\\luis\\desktop\\prueba\\backend\\backend.restservices\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D459F562-BD2B-44A8-B22B-71BA1595317F}|Backend.RestServices\\Backend.RestServices.csproj|solutionrelative:backend.restservices\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E14FD64D-FEA6-4C48-9381-C18597A38B80}|Backend.Infraestructure.Repository\\Backend.Infraestructure.Repository.csproj|c:\\users\\luis\\desktop\\prueba\\backend\\backend.infraestructure.repository\\productorepository\\productorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E14FD64D-FEA6-4C48-9381-C18597A38B80}|Backend.Infraestructure.Repository\\Backend.Infraestructure.Repository.csproj|solutionrelative:backend.infraestructure.repository\\productorepository\\productorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\Backend.RestServices\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Backend.RestServices\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\Backend.RestServices\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Backend.RestServices\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAawDIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T03:01:58.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MaestroApplication.cs",
+              "DocumentMoniker": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\Backend.Service.Implementation\\Maestro\\MaestroApplication.cs",
+              "RelativeDocumentMoniker": "Backend.Service.Implementation\\Maestro\\MaestroApplication.cs",
+              "ToolTip": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\Backend.Service.Implementation\\Maestro\\MaestroApplication.cs",
+              "RelativeToolTip": "Backend.Service.Implementation\\Maestro\\MaestroApplication.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAewCkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T03:00:11.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\Backend.Infraestructure.Repository\\ProductoRepository\\ProductoRepository.cs",
+              "RelativeDocumentMoniker": "Backend.Infraestructure.Repository\\ProductoRepository\\ProductoRepository.cs",
+              "ToolTip": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\Backend.Infraestructure.Repository\\ProductoRepository\\ProductoRepository.cs",
+              "RelativeToolTip": "Backend.Infraestructure.Repository\\ProductoRepository\\ProductoRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T02:56:28.873Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

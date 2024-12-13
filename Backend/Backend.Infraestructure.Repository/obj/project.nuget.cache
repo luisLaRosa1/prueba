@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eJlLP4Es3Z6Jnga4qguM6cI8hmAxBxlzmykWifO7MOH5jk2nj4hpSuWIpGfq6a3e5NJ7WFSE621dupQhrlwohQ==",
+  "dgSpecHash": "vJUhixnc4b4=",
   "success": true,
-  "projectFilePath": "C:\\Trabajos\\canvia\\Backend\\Backend.Infraestructure.Repository\\Backend.Infraestructure.Repository.csproj",
+  "projectFilePath": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\Backend.Infraestructure.Repository\\Backend.Infraestructure.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luis\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Luis\\.nuget\\packages\\fluentvalidation\\10.2.3\\fluentvalidation.10.2.3.nupkg.sha512",
@@ -109,5 +109,16 @@
     "C:\\Users\\Luis\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Luis\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"System.IdentityModel.Tokens.Jwt\" 6.15.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

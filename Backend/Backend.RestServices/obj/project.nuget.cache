@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZGq3cnWzFzCtKkH23o7OmEEP+sRcqbuRwne65s/mapIXJxIzqRBxmv/G4nd8dOMgK1GNW3HFij70DSx5lAs10g==",
+  "dgSpecHash": "6VukqN+PiVc=",
   "success": true,
-  "projectFilePath": "C:\\Trabajos\\canvia\\Backend\\Backend.RestServices\\Backend.RestServices.csproj",
+  "projectFilePath": "C:\\Users\\Luis\\Desktop\\prueba\\Backend\\Backend.RestServices\\Backend.RestServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Luis\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Luis\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
@@ -134,7 +134,7 @@
       "message": "El paquete \"Microsoft.AspNetCore.Authentication.JwtBearer\" 5.0.7 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-q7cg-43mg-qp69",
       "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
       "targetGraphs": [
-        "net6.0"
+        "net8.0"
       ]
     }
   ]
