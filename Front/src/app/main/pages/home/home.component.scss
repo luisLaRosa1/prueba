@@ -1,0 +1,36 @@
+@import '../../../../core/ui/styles/colors';
+@import '../../../../core/ui/styles/fonts';
+
+.hero {
+  width: 100%;
+  height: 300px;
+  background-image: url(../../../../assets/img/hero.png);
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+  background-position: center;
+  &::before {
+    content: '';
+    display: block;
+    background: linear-gradient(90.24deg, #000000 -26.97%, rgba(0, 0, 0, 0) 99.77%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__title {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: $font-bold;
+    @media (min-width: 992px) {
+      font-size: 2.857rem;
+      line-height: 3.414rem;
+    }
+  }
+}

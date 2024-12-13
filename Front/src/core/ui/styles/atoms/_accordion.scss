@@ -1,0 +1,29 @@
+@import "../../styles/colors";
+@import "../../styles/fonts.scss";
+
+.accordion-list {
+  &__content-col {
+    width: 100%;
+    margin-bottom: 24px;
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__content-title {
+    color: $grey;
+    margin-bottom: 4px;
+  }
+  &__content-text {
+    font-family: $font-medium;
+    display: flex;
+    word-break: break-word;
+  }
+  &__content-title, &__content-text {
+    @media (max-width: 991px) {
+      font-size: 14px;
+    }
+  } 
+} 

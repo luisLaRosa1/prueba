@@ -1,0 +1,19 @@
+<div class="form" [ngClass]="{ 'form--disabled': disabled }">
+  <label class="txt txt--label u-mb5" [ngClass]="{ 'error-message u-mb0': error }">
+    {{ label }}
+    <ng-content select="[header]"></ng-content>
+  </label>
+  <p-dropdown
+    [options]="options"
+    [dataKey]="optionValue"
+    [optionLabel]="optionLabel"
+    [placeholder]="placeholder"
+    [disabled]="disabled"
+    [filter]="filter"
+    (onChange)="changeDropdown($event)"
+    [ngModel]="selected"
+    [ngClass]="{ 'is-invalid-input u-mb0': error }"
+  >
+  </p-dropdown>
+  <ng-content></ng-content>
+</div>

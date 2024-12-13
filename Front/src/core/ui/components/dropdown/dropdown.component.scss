@@ -1,0 +1,33 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+
+.p-dropdown {
+  width: 100%;
+  border-bottom: 1px solid $grey !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+  &.p-dropdown-open {
+    border-color: $bhp-orange-1 !important;
+  }
+  &.p-focus {
+    box-shadow: none !important;
+  }
+  &-trigger-icon {
+    color: $bhp-orange-1 !important;
+  }
+  &-label {
+    padding-left: 0 !important;
+    color: $dark-grey !important;
+    font-family: $font-regular !important;
+    &.p-placeholder {
+      color: $bhp-grey-6 !important;
+    }
+  }
+  &-item {
+    padding-left: 24px !important;
+    color: $dark-grey !important;
+    background: transparent !important;
+  }
+}

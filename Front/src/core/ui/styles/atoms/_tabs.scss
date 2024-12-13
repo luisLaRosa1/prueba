@@ -1,0 +1,74 @@
+.p-tabview {
+  &-nav {
+    background-color: $lighter-grey !important;
+    border: 1px solid $darker-grey-2 !important;
+    width: 100%;
+    border-radius: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      height: 64px;
+      cursor: pointer;
+      flex-basis: 100%;
+      padding: 1px;
+      @media screen and (min-width: 991px) {
+        flex: 1;
+      }
+      &.p-highlight {
+        border: 2px solid $bhp-blue-2 !important;
+        .p-tabview-nav-link  {
+          font-family: $font-medium;
+          color: $bhp-blue-2 !important;
+        }
+        &:first-child {
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          @media screen and (min-width: 991px) {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 8px;
+          }
+        }
+        &:nth-last-child(2) {
+          border-bottom-right-radius: 8px;
+          border-bottom-left-radius: 8px;
+          @media screen and (min-width: 991px) {
+            border-top-right-radius: 8px;
+            border-bottom-left-radius: 0;
+          }
+        }
+      }
+    }
+    &-link {
+      background-color: $lighter-grey !important;
+      border: 0 !important;
+      color: $dark-grey !important;
+      height: 100%;
+      justify-content: center;
+      box-shadow: none !important;
+      font-family: $font-regular;
+      font-weight: normal !important;
+    }
+    .p-tabview-title {
+      text-align: center;
+    }
+  }
+}
+
+.tabs--white {
+  .p-tabview-nav{
+    max-width: 100% !important;
+  }
+  .p-tabview-nav-link{
+    background: $white !important;
+  }
+  .p-tabview-panels{
+    background-color: transparent !important;
+    @media screen and (max-width: 991px) {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+}

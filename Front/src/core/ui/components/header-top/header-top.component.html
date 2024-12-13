@@ -1,0 +1,22 @@
+<div class="head__top">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="head__shorcuts">
+          <ul class="head__shorcuts-list">
+            <li class="head__shorcuts-item" *ngIf="showLogout">
+              <a class="icon-quit icon" href="javascript:void(0)" (click)="onLogout()"></a>
+            </li>
+            <li class="head__shorcuts-item">
+              <a class="user" href="">
+                <span>
+                  {{ initials }}
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

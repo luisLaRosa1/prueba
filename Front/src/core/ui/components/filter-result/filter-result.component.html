@@ -1,0 +1,9 @@
+<div class="txt txt-web-body-large txt--alert u-mb20 form__filter-result" *ngIf="view">
+  Mostrando <strong>{{ view }}</strong> resultados
+  <ng-template [ngIf]="viewText">
+    para
+    <strong *ngFor="let text of texts; let f = first">
+      <ng-container *ngIf="!f">,&nbsp;</ng-container>"{{ text }}"
+    </strong>
+  </ng-template>
+</div>

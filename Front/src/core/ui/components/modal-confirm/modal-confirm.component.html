@@ -1,0 +1,40 @@
+<div class="modal">
+  <div class="modal__layer"></div>
+  <div class="modal__box modal__box--small" id="modal01">
+    <div class="modal__box__head">
+      <p [innerHTML]="question" class="txt txt-web-h5 u-mb0"></p>
+      <a (click)="closeModalConfirm()" class="modal__close"></a>
+    </div>
+    <div class="modal__box__body">
+      <form>
+        <div class="form u-mb30">
+          <p [innerHTML]="message" class="u-mb0 u-mt0 u-center"></p>
+        </div>
+        <div class="modal__btn">
+          <div class="row">
+            <div class="col-md-12 u-mb20">
+              <frontbutton
+                primary
+                (click)="modalConfirm()"
+                [loading]="inProcess"
+                [label]="btnConfirmLabel"
+                [cssClass]="'btn--big btn--modal'"
+                [disabled]="inProcess"
+              >
+              </frontbutton>
+            </div>
+            <div class="col-md-12">
+              <frontbutton
+                (click)="closeModalConfirm()"
+                [label]="cancelLabel"
+                [cssClass]="'btn--big btn--modal'"
+                [disabled]="inProcess"
+              >
+              </frontbutton>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+.form {
+  &__filter-result {
+    @media (min-width: 768px) {
+      display: inline-block;
+    }
+  }
+}

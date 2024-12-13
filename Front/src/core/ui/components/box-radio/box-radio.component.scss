@@ -1,0 +1,52 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+
+.box-radio {
+  position: relative;
+  width: 100%;
+  margin-bottom: 32px;
+  @media( min-width: 767px) {
+    width: 178px;
+    margin-right: 40px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    &:checked + .box-radio__label {
+      border: 2px solid $bhp-orange-1;
+    }
+  }
+  &__label {
+    display: block;
+    padding: 23px 20px;
+    border-radius: 4px;
+    border: 1px solid $darker-grey-2;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: $shadow;
+    .box-radio__icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+  }
+  &__title {
+    font-family: $font-medium;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__text {
+    font-family: $font-regular;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

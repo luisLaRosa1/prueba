@@ -1,0 +1,165 @@
+.p-datatable {
+  background-color: $white !important;
+  padding: 16px;
+  box-shadow: $shadow;
+  border-radius: 8px;
+  @media screen and (min-width: 992px) {
+    padding: 2rem 1.714rem;
+  }
+  .p-datatable-thead {
+    border-bottom: 1px solid $bhp-grey-6;
+    @media screen and (max-width: 991px), screen and (max-device-width: 1024px) and (orientation: landscape) {
+      display: none;
+    }
+    .tooltips__text {
+      background-color: $white !important;
+    }
+    td {
+      padding: 1rem 1rem;
+      font-size: 1rem;
+      font-family: $font-medium;
+    }
+    td,th, span {
+      background: transparent !important;
+      color: $dark-grey !important;
+    }
+    .pi-sort-alt {
+      color: $dark-grey !important;
+      font-size: 1.143rem;
+    }
+    .pi-sort-amount-down {
+      color: $bhp-orange-1 !important;
+      font-size: 1.429rem;
+      &::before {
+        content: "\e910";
+        font-family: 'icomoon';
+      }
+    }
+    .pi-sort-amount-up-alt {
+      color: $bhp-orange-1 !important;
+      font-size: 1.429rem;
+      &::before {
+        content: "\e911";
+        font-family: 'icomoon';
+      }
+    }
+    .p-sortable-column:focus {
+      box-shadow: none;
+      outline: none;
+    }
+    .p-sortable-column-icon {
+      margin-top: -6px;
+    }
+  }
+  .p-datatable-tbody {
+    tr {
+      @media screen and (max-width: 991px), screen and (max-device-width: 1024px) and (orientation: landscape){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      @media screen and (min-width: 992px) {
+        background: $lighter-grey !important;
+      }
+      @media screen and (max-device-width: 1024px) and (orientation: landscape) {
+        background: $white !important;
+      }
+      &:first-child {
+        td:first-child {
+          border-top: 0 !important;
+        }
+      }
+      &:nth-child(2n) {
+        background: $white !important;
+      }
+      td:first-child {
+        @media screen and (max-width: 991px),  screen and (max-device-width: 1024px) and (orientation: landscape) {
+          background: $lighter-grey !important;
+          border-top: 1px solid $bhp-grey-6 !important;
+        }
+        .title {
+          font-family: $font-medium;
+        }
+      }
+    }
+    td {
+      border: 0 !important;
+      color: $dark-grey;
+      font-family: $font-regular;
+      padding: 1rem !important;
+      word-break: break-word;
+      word-wrap: break-word;
+      font-size: 1rem;
+      line-height: 1.35rem;
+      @media screen and (min-width: 992px) {
+        min-height: 64px;
+        padding: 1.2rem 1rem !important;
+      }
+      @media screen and (max-width: 991px), screen and (max-device-width: 1024px) and (orientation: landscape){
+        display: flex;
+        justify-content: space-between;
+        padding-top: 22px !important;
+        padding-bottom: 22px !important;
+      }
+    }
+    .title {
+      color: $dark-grey;
+      display: block;
+      @media screen and (min-width: 767px) {
+        font-size: 1.143rem;
+        line-height: 1.714rem;
+      }
+      @media screen and (min-width: 991px) {
+        display: none;
+      }
+      @media screen and (max-device-width: 1024px) and (orientation: landscape) {
+        display: block;
+      }
+      &--underline {
+        text-decoration: underline;
+        font-family: $font-medium;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        cursor: pointer;
+      }
+    }
+    .text {
+      @media screen and (max-width: 991px) {
+        text-align: right;
+        width: 50%;
+      }
+    }
+    a {
+      color: $dark-grey;
+    }
+  }
+
+  .col-truncate {
+    @media screen and (min-width: 992px) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .text {
+      @media screen and (max-width: 991px) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  &.transparent {
+    box-shadow: none;
+    padding: 0 !important;
+    th {
+      border: 0 !important;
+    }
+    .p-datatable-thead {
+      border-top: 1px solid $bhp-grey-disabled;
+      border-bottom: 1px solid $bhp-grey-disabled;
+      height: 80px;
+    }
+  }
+}

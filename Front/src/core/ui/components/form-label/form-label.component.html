@@ -1,0 +1,7 @@
+<div class="form" [ngClass]="{ 'form--disabled': disabled }">
+  <label class="txt txt--label u-mb5" [ngClass]="{ 'error-message u-mb0': error }">
+    {{ label }}
+    <ng-content select="[header]"></ng-content>
+  </label>
+  <ng-content></ng-content>
+</div>

@@ -1,0 +1,23 @@
+<div class="form">
+  <label class="txt txt--label u-block u-mb5">
+    {{ label }}
+    <ng-content select="[header]"></ng-content>
+  </label>
+  <div class="u-flex">
+    <div class="form__radio u-mr20" *ngFor="let option of options; let i = index">
+      <input
+        type="radio"
+        [attr.id]="name + i"
+        [attr.name]="name"
+        [value]="option.value"
+        [checked]="value === option.value"
+        (change)="changeRadioOption($event, option, option.value)"
+      />
+      <label [attr.for]="name + i">
+        <div class="fakebox"></div>
+        {{ option.label }}
+      </label>
+    </div>
+  </div>
+  <ng-content></ng-content>
+</div>

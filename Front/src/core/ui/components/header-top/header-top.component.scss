@@ -1,0 +1,61 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+@import '../../styles/utility';
+
+.head {
+  &__top {
+    padding: 0.357rem 0;
+		display: flex;
+    @media( max-width:991px), screen and (max-device-width: 1024px) and (orientation: landscape) {
+      background: linear-gradient(113.36deg, $bhp-orange-1 1.06%, $bhp-orange-5 100%);
+    }
+    @media( min-width:992px){
+      background: linear-gradient(-67deg, $bhp-orange-1 1.06%, $bhp-orange-5 100%);
+    }
+  }
+  &__shorcuts {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+		&-list {
+			padding-left: 0;
+			font-size: 0;
+			margin-bottom: 0;
+      display: flex;
+      align-items: center;
+		}
+    &-item {
+      display: inline-block;
+      padding: 0 27px;
+      &:last-child {
+        padding: 0;
+      }
+      a {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 26px;
+        font-family: $font-regular;
+        color: $white;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  
+    .icon {
+      font-size: 24px;
+    }
+    .user {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      text-transform: uppercase;
+      background-color: $bhp-grey-4;
+      color: $grey-900;
+      font-family: $font-medium;
+    }
+	}
+}

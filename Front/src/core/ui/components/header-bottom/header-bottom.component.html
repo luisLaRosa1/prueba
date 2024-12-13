@@ -1,0 +1,75 @@
+<div class="head__bottom" #headBottom>
+  <div
+    *ngFor="let op of options; let i = index"
+    class="head__menu__mobile head__menu__mobile--inner transition"
+    [attr.id]="'menu-mobile' + i"
+    #menuMobile
+  >
+    <a href="javascript:void(0)" class="head__menu__mobile__close" (click)="closeSubMenuMobile('menu-mobile' + i)"></a>
+    <div class="head__menu__mobile__top">
+      <ul class="head__menu__list head__menu__list--reverse">
+        <li>
+          <a
+            href="javascript:void(0)"
+            (click)="closeSubMenuMobile('menu-mobile' + i)"
+            class="head__top__trigger txt txt-web-medium-headline"
+          >
+            Inicio
+          </a>
+        </li>
+      </ul>
+      <h4 class="txt txt-web-medium-headline u-mb0">{{ op.label }}</h4>
+    </div>
+    <div class="head__menu__mobile__bottom">
+      <ul class="head__menu__list head__menu__list--small">
+        <li *ngFor="let sop of op.options">
+          <a [routerLink]="sop.url" class="txt txt-web-body" (click)="closeSubMenuMobile('menu-mobile' + i, true)">
+            {{ sop.label }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container" (mouseleave)="showSubMenu(false)">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-2 col-md-1">
+            <a *ngIf="showLogo" class="head__logo" href="/" title="Logo">
+              <div class="head__logo-img"></div>
+            </a>
+          </div>
+          <div class="col-10 col-md-11">
+            <div class="head__menu head__menu--alt" id="menu-mobile-alt" #menuMobileAlt>
+              <a href="javascript:void(0);" (click)="closeMenuMobile()" class="head__menu__close"></a>
+              <ul class="head__menu__group">
+                <li
+                  *ngFor="let op of options; let i = index"
+                  class="head__menu__item"
+                  (mouseenter)="showSubMenu(!op.isMain)"
+                >
+                  <a [routerLink]="op.url" class="head__menu__trigger" [routerLinkActive]="['head__menu__active']">
+                    <span (click)="openSubMenuMobile($event, op.isMain, 'menu-mobile' + i)">
+                      {{ op.label }}
+                    </span>
+                  </a>
+                  <ul class="head__menu__submenu" [hidden]="op.isMain">
+                    <li>
+                      <h3 class="txt txt-web-body-heavy">
+                        {{ op.label }}
+                      </h3>
+                    </li>
+                    <li *ngFor="let sop of op.options">
+                      <a [routerLink]="sop.url" class="txt txt-web-body">{{ sop.label }}</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <a href="javascript:void(0)" (click)="openMenuMobile()" id="menu-toggle"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

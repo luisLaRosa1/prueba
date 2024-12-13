@@ -1,0 +1,19 @@
+<div class="box-radio__wrapper u-flex u-mb20">
+  <div class="box-radio">
+    <input
+      class="box-radio__input"
+      type="radio"
+      [attr.id]="id"
+      [attr.name]="name"
+      [value]="value"
+      [(ngModel)]="ngModel"
+      [checked]="ngModel === value"
+      (change)="ngModelChange.next(ngModel)"
+    />
+    <label class="box-radio__label" [attr.for]="id">
+      <div class="box-radio__icon" [ngClass]="icon"></div>
+      <h4 class="box-radio__title u-mb5">{{ title }}</h4>
+      <h5 class="box-radio__text u-mb0">{{ description }}</h5>
+    </label>
+  </div>
+</div>

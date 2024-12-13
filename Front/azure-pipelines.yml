@@ -1,0 +1,70 @@
+# Node.js with Angular
+
+# Build a Node.js project that uses Angular.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- develop
+- qa
+- master
+
+pool:
+  vmImage: ubuntu-latest
+  #vmImage: 'windows-latest'
+
+variables:
+  projectName: front
+  isDev: $[eq(variables['Build.SourceBranch'], 'refs/heads/develop')]
+  isQA: $[eq(variables['Build.SourceBranch'], 'refs/heads/qa')]
+  isPrd: $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
+
+steps:
+- task: Npm@0
+  displayName: 'npm install'
+  inputs:
+    cwd: ','
+
+- task: Npm@0
+  displayName: 'npm build develop'
+  condition: and(succeeded(), eq(variables.isDev, true)) 
+  inputs:
+    cwd: ','
+    command: 'run '
+    arguments: 'build:dev'
+
+- task: Npm@0
+  displayName: 'npm build qa'
+  condition: and(succeeded(), eq(variables.isQA, true)) 
+  inputs:
+    cwd: ','
+    command: 'run '
+    arguments: 'build:qa'
+
+- task: Npm@0
+  displayName: 'npm build production'
+  condition: and(succeeded(), eq(variables.isPrd, true)) 
+  inputs:
+    cwd: ','
+    command: 'run '
+    arguments: 'build:prod'
+
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      New-Item dist/front/web.config
+      Set-Content dist/front/\web.config '<configuration> <system.webServer> <rewrite>  <rules> <rule name="Angular Routes" stopProcessing="true"> <match url=".*" /> <conditions logicalGrouping="MatchAll"> <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" /><add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" /> </conditions> <action type="Rewrite" url="/" /></rule> </rules> </rewrite> </system.webServer> </configuration>'
+
+- task: CopyFiles@2
+  displayName: 'Copy file to $(Build.ArtifactStagingDirectory)/front'
+  inputs:
+    sourceFolder: 'dist/front/'
+    contents: '**'
+    targetFolder: '$(Build.ArtifactStagingDirectory)/front'
+
+# Publicar artefacto internamente
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish artifact: drop'
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/front'

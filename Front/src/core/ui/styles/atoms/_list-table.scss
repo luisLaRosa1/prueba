@@ -1,0 +1,53 @@
+@import "../colors";
+@import "../fonts";
+
+.list-table {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $light-grey;
+    padding: 24px;
+    &:nth-child(2n) {
+      background-color: $white;
+      @media( max-width: 767px) {
+        border-top: 1px solid $grey;
+      }
+    }
+    @media(min-width: 768px) {
+      align-items: center;
+      padding: 28px 24px;
+    }
+    .text {
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @media( max-width: 767px) {
+       margin: 0 0 8px;
+      }
+      @media( min-width: 768px) {
+        margin: 0;
+        width: 50%;
+      }
+    }
+    .icon {
+      font-size: 20px;
+      width: 20px;
+    }
+  }
+  &__info {
+    width: calc(100% - 20px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    @media(min-width: 768px) {
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+}

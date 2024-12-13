@@ -1,0 +1,15 @@
+<div class="checkbox">
+  <input
+    type="checkbox"
+    [(ngModel)]="checked"
+    [ngModelOptions]="{ standalone: true }"
+    (change)="checkedChange.next(checked)"
+    [attr.name]="inputId"
+    [attr.id]="inputId"
+  />
+  <label [attr.for]="inputId">
+    <div class="fakebox"></div>
+    {{ label }}
+    <ng-content></ng-content>
+  </label>
+</div>

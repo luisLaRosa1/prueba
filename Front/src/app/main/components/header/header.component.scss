@@ -1,0 +1,32 @@
+.header-title {
+  &__box {
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+    @media screen and (min-width: 992px) {
+      align-items: center;
+    }
+  }
+  &__info {
+    flex: 1;
+  }
+  &__btn-box {
+    @media screen and (min-width: 1200px) {
+      max-width: 451px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+    @media screen and (min-width: 1400px) {
+      max-width: 631px;
+    }
+    frontbutton {
+      width: 250px;
+      display: block;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

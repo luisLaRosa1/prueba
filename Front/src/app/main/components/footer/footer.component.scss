@@ -1,0 +1,84 @@
+@import "../../../../core/ui/styles/colors";
+@import "../../../../core/ui/styles/fonts.scss";
+
+.footer {
+  background-color: $light-grey;
+  padding: 64px 0;
+  @media (max-width: 991px) {
+    padding: 40px 0 20px;
+    text-align: center;
+  }
+  &__title {
+    color: $dark-grey;
+    font-family: $font-regular;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 8px;
+    @media (min-width: 992px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $dark-grey;
+    text-align: right;
+    @media (max-width: 991px) {
+      text-align: center;
+      padding-top: 16px;
+      border-top: 1px solid $grey;
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &-box{
+      @media (min-width: 992px) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+  &__contact {
+    color: $dark-grey;
+    font-family: $font-bold;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 28px;
+    @media (min-width: 992px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url('../../../../assets/img/icon-phone-dark.png');
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+      width: 16px;
+      height: 22px;
+      @media (min-width: 992px) {
+        width: 18px;
+        height: 24px;
+      }
+    }
+  }
+  &__link {
+    color: $dark-grey;
+    display: block;
+    font-family: $font-light;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+    @media (min-width: 992px) {
+      margin: 8px 0 0;
+    }
+  }
+}

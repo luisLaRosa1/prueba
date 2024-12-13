@@ -1,0 +1,4 @@
+<button [type]="type" [ngClass]="classes" [disabled]="disabled">
+  <i *ngIf="icon || loading" [ngClass]="classesIcon"></i>
+  <span>{{ label }}<ng-content></ng-content></span>
+</button>

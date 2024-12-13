@@ -1,0 +1,26 @@
+<pmf-loader *ngIf="loading"></pmf-loader>
+<div class="hero">
+  <div class="container">
+    <h2 class="u-text--white hero__title">Encuesta</h2>
+  </div>
+</div>
+<div class="container container--md">
+  <div class="box--border">
+    <p class="text u-mb20">¡Bienvenido a la encuesta online!.</p>
+  </div>
+</div>
+
+<div class="container container--md">
+  <div class="row u-mb80" *ngFor="let item of data; let i = index">
+    <div class="col-md-12">
+      <h5 class="txt txt__title--seccion">Pregunta {{ i + 1 }}: {{ item.questionName }}</h5>
+      <ng-container *ngIf="item.questionCode === '001' || item.questionCode === '002'">
+        <pmf-radio-options [options]="convert(item.value)"></pmf-radio-options>
+      </ng-container>
+      <ng-container *ngIf="item.questionCode === '003'">
+        <pmf-input> </pmf-input>
+      </ng-container>
+    </div>
+  </div>
+  <pmf-button primary cssClass="btn-mb u-mr10"> Guardar encuesta </pmf-button>
+</div>

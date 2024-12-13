@@ -1,0 +1,91 @@
+.p-dialog {
+  .p-datepicker {
+    position: fixed !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    min-width: 80% !important;
+    top: 50% !important;
+    display: block !important;
+    transform-origin: left top !important;
+    transition: none !important;
+  }
+  &.p-component {
+    width:80% !important;
+    @media screen and (min-width: 992px) {
+      width: 500px !important;
+    }
+  &.p-component--md {
+      @media screen and (min-width: 992px) {
+        width: 765px !important;
+      }
+    }
+    &.p-component--lg {
+      @media screen and (min-width: 1024px) {
+        width: 960px !important;
+      }
+    }
+  }
+  &-header {
+    padding: 60px 32px 24px  !important;
+    position: relative;
+    border-top-right-radius: 8px !important;
+    border-top-left-radius: 8px !important;
+    justify-content: center !important;
+    @media screen and (min-width: 992px) {
+      padding: 60px 40px 24px  !important;
+    }
+    &-icons {
+      position: absolute;
+      top: 40px;
+      right: 20px;
+      background: transparent !important;
+    }
+    &-icon {
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+    }
+    &-close-icon {
+      color: $dark-grey !important;
+      font-size: 24px !important;
+    }
+  }
+  &-content {
+    padding: 0 32px 40px !important;
+    border-bottom-right-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+    @media screen and (min-width: 992px) {
+      padding: 0 40px 56px !important;
+    }
+  }
+  &-title {
+    color: $dark-grey !important;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    text-align: center;
+    font-family: $font-medium;
+  }
+  &-mask.p-component-overlay {
+    background-color: rgba(52, 58, 64, 0.8) !important;
+  }
+  .no-transform { 
+    .popovers__info {
+      transform: none !important;
+      @media screen and (min-width: 992px) {
+        left: 0 !important;
+        right: auto !important;
+      }
+    }
+  }
+  .popovers__info {
+    @media screen and (max-width: 767px) {
+      min-width: 200px !important;
+      transform: translateX(-74%) !important;
+    }
+    @media screen and (min-width: 992px) {
+      right: 0;
+      left: auto !important;
+      transform: none !important;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../../../../assets/fonts/icomoon.eot?9c87ew');
+    src:  url('../../../../assets/fonts/icomoon.eot?9c87ew#iefix') format('embedded-opentype'),
+      url('../../../../assets/fonts/icomoon.ttf?9c87ew') format('truetype'),
+      url('../../../../assets/fonts/icomoon.woff?9c87ew') format('woff'),
+      url('../../../../assets/fonts/icomoon.svg?9c87ew#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-people-outline:before {
+    content: "\e919";
+  }
+  .icon-standar:before {
+    content: "\e91a";
+  }
+  .icon-eye:before {
+    content: "\e91b";
+  }
+  .icon-upload-file:before {
+    content: "\e91c";
+  }
+  .icon-refresh:before {
+    content: "\e91d";
+  }
+  .icon-delete:before {
+    content: "\e918";
+  }
+  .icon-person-add:before {
+    content: "\e916";
+  }
+  .icon-search:before {
+    content: "\e90a";
+  }
+  .icon-information:before {
+    content: "\e915";
+  }
+  .icon-check:before {
+    content: "\e917";
+  }
+  .icon-chevron-up:before {
+    content: "\e905";
+  }
+  .icon-add-circle:before {
+    content: "\e906";
+  }
+  .icon-arrow-left:before {
+    content: "\e907";
+  }
+  .icon-ayuda:before {
+    content: "\e908";
+  }
+  .icon-carga-masiva:before {
+    content: "\e909";
+  }
+  .icon-close:before {
+    content: "\e90b";
+  }
+  .icon-calendar:before {
+    content: "\e90c";
+  }
+  .icon-download:before {
+    content: "\e90d";
+  }
+  .icon-edit:before {
+    content: "\e90e";
+  }
+  .icon-plus:before {
+    content: "\e90f";
+  }
+  .icon-arrow-down:before {
+    content: "\e910";
+  }
+  .icon-arrow-up:before {
+    content: "\e911";
+  }
+  .icon-successful:before {
+    content: "\e912";
+  }
+  .icon-trash:before {
+    content: "\e913";
+  }
+  .icon-upload:before {
+    content: "\e914";
+  }
+  .icon-quit:before {
+    content: "\e904";
+  }
+  .icon-shorter:before {
+    content: "\e901";
+  }
+  .icon-exclamation:before {
+    content: "\e900";
+  }
+  .icon-arrow-right:before {
+    content: "\e902";
+  }
+  .icon-chevron-down:before {
+    content: "\e903";
+  }
+  .icon-spinner:before {
+    content: "\e981";
+  }
+  

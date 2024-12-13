@@ -1,0 +1,50 @@
+@import '../../styles/colors';
+
+.radio-button {
+  position: relative;
+  label {
+    font-size: 14px;
+    line-height: 26px;
+    color: #252525;
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    font-family: 'Graphik Regular';
+    cursor: pointer;
+    margin-bottom: 0;
+    .fakebox {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $dark-grey;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+    }
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    &:checked {
+      +label {
+        .fakebox {
+          &:after {
+            content: '';
+            background-color: $bhp-orange-1;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+    }
+  }
+}

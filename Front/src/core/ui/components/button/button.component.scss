@@ -1,0 +1,196 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+@import "../../styles/utility";
+@import "../../styles/atoms/icons";
+:host{
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  font-family: 'Graphik Medium';
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid $grey-2;
+  background-color: $white;
+  color: $dark-grey;
+  font-size: 1rem;
+  line-height: 1.48rem;
+  border-radius: 5px;
+  padding: 0.786rem 1.429rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  @media (max-width:767px) {
+    width: 100%;
+    display: block;
+  }
+  &:focus, &:active {
+    outline: 0;
+  }
+  span {
+    display: inline-block;
+  }
+  &.btn--big {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  &.btn--icon {
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    .icon-spinner {
+      animation-name: spin;
+      animation-duration: 5000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+    .btn__icon {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 24px;
+      color: $bhp-orange-1;
+    }
+  }
+  &.btn--primary {
+    color: $white;
+    background-color: $bhp-orange-1;
+    border-color: $bhp-orange-1;
+    min-width: 250px;
+    @media (max-width:480px) {
+      min-width:100%;
+    }
+    &.btn--disabled {
+      color: $bhp-grey-6;
+      background-color: $darker-grey-2;
+      border-color: $darker-grey-2;
+      pointer-events: none;
+    }
+    .btn__icon {
+      color: $white;
+    }
+  }
+  &.btn--rounded {
+    border-radius: 500px;
+  }
+  &.btn--outline {
+    background-color: transparent;
+    border-color: $bhp-orange-1;
+    color: $bhp-orange-1;
+    min-width: 250px;
+    @media (max-width:480px) {
+      min-width:100%;
+    }
+    &:disabled,
+    &.btn--disabled {
+      color: $bhp-grey-6;
+      color: $darker-grey-2;
+      border-color: $darker-grey-2;
+      pointer-events: none;
+    }
+  }
+  &.btn--outline-white {
+    color: $white;
+    background-color: transparent;
+    border-color: $white;
+    min-width:100%;
+    @media (min-width: 992px) {
+      min-width: 250px;
+    }
+  }
+  &.btn--download {
+    border-radius: 500px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid $grey-2;
+    background-color: $white;
+    color: $dark-grey;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    .btn__icon {
+        color: $bhp-orange-1;
+        font-size: 21px;
+        display: inline-block;
+        margin-right: 10px;
+    }
+  }
+  &.btn--link {
+    color: #343A40;
+    background-color: $white;
+    border-color: $white;
+    padding-top: 0;
+    padding-bottom: 0;
+    span{
+      border-bottom: 1px solid $bhp-orange-1;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+  &.btn--solid {
+    background-color: $bhp-orange-1;
+    border-color: $bhp-orange-1;
+    color: $white;
+    width: 100%;
+    &:disabled,
+    &.btn--disabled {
+    color: black;
+    color: $disabled;
+    border-color: $disabled;
+    pointer-events: none;
+    }
+  }
+  &.btn--outline--remove {
+    background-color: $white;
+    border-color: $bhp-orange-1;
+    color: $bhp-orange-1;
+    width: 100%;
+    &:disabled,
+    &.btn--disabled {
+    color: $white;
+    color: $disabled;
+    border-color: $disabled;
+    pointer-events: none;
+    }
+  }
+  &.header-title__btn {
+    width: auto;
+    @media screen and (max-width: 991px) {
+     margin-top: 12px;
+    }
+    @media screen and (min-width: 992px) {
+      margin-left: 12px;
+     }
+  }
+  &.box__title-btn {
+    width: auto;
+  }
+  &.btn--modal {
+    min-width: 100%;
+  }
+  &.btn--center {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    @media (max-width:480px) {
+      min-width:100%;
+    }
+  }
+  &.btn--icon.btn--center {
+    display: block;
+    span {
+      position: relative;
+      top: -4px;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
